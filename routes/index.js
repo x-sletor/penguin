@@ -1,5 +1,4 @@
 var express = require('express');
-// const { Todos } = require('../models/todos');
 var router = express.Router();
 var {Todos} = require('../models/todos');
 
