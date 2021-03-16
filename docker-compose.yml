@@ -12,6 +12,9 @@ services:
       - 8088:8088
     volumes: 
       - .:/usr/src/app
+    links: 
+      - mongodb
+
   mongodb:
     image: mongo:latest
     ports: 
