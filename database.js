@@ -9,5 +9,5 @@ var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'CONNECTION ERROR'))
 db.once('open', function(){
   // we're connection
-  console.log('connected')
+  console.log('connected');
 })

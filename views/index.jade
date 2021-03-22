@@ -23,6 +23,11 @@ html(lang='en')
       }
   |   
   body
+    
+    form(method='post')
+      input(type='text', size='80', name='query')
+      |    
+      input.submitButton(type='submit', value='Search')
     .container
       a(href='/material')
         // material
