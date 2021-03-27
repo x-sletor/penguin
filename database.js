@@ -6,6 +6,7 @@ mongoose.connect('mongodb://mongodb:27017/mama', {
 });
 
 var db = mongoose.connection;
+
 db.on('error', console.error.bind(console, 'CONNECTION ERROR'))
 db.once('open', function(){
   // we're connection
