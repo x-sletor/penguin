@@ -11,8 +11,8 @@ router.get('/', async function(req, res, next) {
 });
 
 /* page */
-router.get('/material', function(req,res,next){
-  res.render('material');
+router.get('/ingredient', function(req,res,next){
+  res.render('ingredient');
 });
 
 router.get('/menu', function(req,res,next){
