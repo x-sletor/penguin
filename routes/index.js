@@ -1,13 +1,13 @@
 var express = require('express');
 var router = express.Router();
-var {Todos} = require('../models/todos');
-var {Cash} = require('../models/cashier');
+var {Homes} = require('../models/homes');
+
 
 /* GET home page. */
 router.get('/', async function(req, res, next) {
-  const todos = await Todos.find();
+  const homes = await Homes.find();
   // (description:'going to the gym', complete)
-  res.render('index');
+  res.render('index', { title: 'Mama Penguin', homes: homes });
 });
 
 /* page */
