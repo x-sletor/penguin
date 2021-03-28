@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page Ingredient</title>
+    <title>Page Menu</title>
     
     <!-- Bootstrap CSS-->
     <link
@@ -38,7 +38,7 @@
               <i class="fas fa-bars"></i>
             </button>
           
-            <div class="dropdown-menu bg-dark" style="text-align: left; width: 267px; height: 744px; margin-left: -17px;">
+            <div class="dropdown-menu bg-dark" style="text-align: left; width: 267px; height: 744px; margin-left: -17px; ">
               <a class="navbar-brand text-light">
                 <br>
                 <img src="img/kitty.png" alt="logo" style="width:75px; padding-left: 25px;">
@@ -78,23 +78,23 @@
     </nav>
 
     <div class="container p-3 my-3" >
-      <h1 class="text-black text-center">ตารางจัดการข้อมูลวัตถุดิบ</h1>
+      <h1 class="text-black text-center">ตารางจัดการข้อมูลเมนูของหวาน</h1>
     </div>
 
     <!--ส่วนของ การกด +add แล้วจะขึ้น Modal ขึ้นมาให้กรอกข้อมูลเพิ่มรายการวัตถุดิบ-->
     <div class="container">
-    <!-- Button to Open the Modal -->
-      <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#myModal">
-      +Add Ingredient
-      </button>
-    </div>
+      <!-- Button to Open the Modal -->
+        <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#myModal">
+        +Add Ingredient
+        </button>
+      </div>
      <!-- The Modal -->
       <div class="modal fade" id="myModal">
         <div class="modal-dialog">
           <div class="modal-content">
           <!-- Modal Header -->
             <div class="modal-header">
-              <h4 class="modal-title">เพิ่มรายการวัตถุดิบ</h4>
+              <h4 class="modal-title">เพิ่มรายการเมนูของหวาน</h4>
               <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
           <!-- Modal body -->
@@ -102,30 +102,30 @@
               
                 <div class="form-group">
                   <label for="name">Name:</label>
-                  <input type="text" class="form-control" placeholder="Name Ingredient" id="name">
+                  <input type="text" class="form-control" placeholder="Name Menu" id="name">
+                </div>
+                <div class="form-group">
+                  <label for="price">Price:</label>
+                  <input type="number" min="1" max="1000" value="0" class="form-control" placeholder="Price Menu" id="price">
                 </div>
                 <div class="form-group">
                   <label for="amount">Amount:</label>
-                  <input type="number" min="1" max="100" value="0" class="form-control" placeholder="Amount Ingredient" id="amount">
-                </div>
-                <div class="form-group">
-                  <label for="unit">Unit:</label>
-                  <input type="text" class="form-control" placeholder="Unit...." id="unit">
+                  <input type="number" min="1" max="100" value="0" class="form-control" placeholder="Menu Amount" id="amount">
                 </div>
                 
-                <button type="submit" class="btn btn-primary" value="submit">Submit</button>
-             
+              
+              <button type="submit" class="btn btn-primary" value="submit">Submit</button>
             </div>
           <!-- Modal footer -->
             
             <div class="modal-footer">
-              
+             
               <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
             </div>
           </div>
         </div>
       </div>
-    
+   
   </br>
 
     <!--ส่วนของตาราง-->
@@ -133,11 +133,11 @@
     <div class="container">
       <table class="table table-dark table-striped table-bordered text-center">
         <!--Nav tabs-->
-        <thead>
+        <thead >
           <tr>
-            <th>ID<th
-            <th>Ingredient</th>
-            <th>Unit</th>
+            <th>ID</th>
+            <th>Menu</th>
+            <th>Price (Baht)</th>
             <th>Edit</th>
             <th>Delete</th>
           </tr>
@@ -145,50 +145,42 @@
         <tbody>
           <tr>
             <td>001</td>
-            <td>นมข้นหวาน</td>
-            <td>มิลลิกรัม</td>
-            <td>1000</td>
+            <td>Bingsu</td>
+            <td>125</td>
+            <td>20</td>
             <td><button type="button" class="btn btn-danger">Delete</button></td>
           </tr>
           <tr>
             <td>002</td>
-            <td>ผงโกโก้</td>
-            <td>ช้อนโต๊ะ</td>
-            <td>500</td>
+            <td>Ice-cream</td>
+            <td>45</td>
+            <td>30</td>
             <td><button type="button" class="btn btn-danger">Delete</button></td>
           </tr>
           <tr>
             <td>003</td>
-            <td>นมข้นจืด</td>
-            <td>มิลลิกรัม</td>
-            <td>1000</td>
+            <td>Granita</td>
+            <td>125</td>
+            <td>10</td>
             <td><button type="button" class="btn btn-danger">Delete</button></td>
           </tr>
           <tr>
             <td>004</td>
-            <td>นมสด</td>
-            <td>มิลลิกรัม</td>
-            <td>1000</td>
+            <td>Kakigori</td>
+            <td>20</td>
+            <td>30</td>
             <td><button type="button" class="btn btn-danger">Delete</button></td>
           </tr>
           <tr>
             <td>005</td>
-            <td>วิปปิ้งครีม</td>
-            <td>มิลลิกรัม</td>
-            <td>2000</td>
-            <td><button type="button" class="btn btn-danger">Delete</button></td>
-          </tr>
-          <tr>
-            <td>006</td>
-            <td>น้ำตาลทรายแดง</td>
-            <td>กรัม</td>
-            <td>1000</td>
+            <td>Cake Ice-cream</td>
+            <td>250</td>
+            <td>20</td>
             <td><button type="button" class="btn btn-danger">Delete</button></td>
           </tr>
         </tbody>
       </table>
     </div>
     <script src="ingre.js"></script>
-    
   </body>
 </html>
