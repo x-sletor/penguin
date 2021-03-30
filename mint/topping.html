@@ -144,7 +144,7 @@
             <th>Topping</th>
             <th>Price (Baht)</th>
             <th>Unit</th>
-            <th>Edit</th>
+            <th>Amount</th>
             <th>Delete</th>
           </tr>
         </thead>
@@ -154,7 +154,37 @@
             <td>Brownies</td>
             <td>10</td>
             <td>ก้อน</td>
-            <td>20</td>
+            <td>20
+              <button class="btn btn-success btn-sm" type="button" data-toggle="modal" data-target="#myModal1">
+                <i class="fas fa-edit"></i>
+              </button>
+                  <!-- The Modal -->
+              <div class="modal fade" id="myModal1">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                    <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title text-dark">แก้ไขจำนวนท็อปปิ้ง</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                    <!-- Modal body -->
+                      <div class="modal-body">
+                        <form action="./action_page.php">
+                          <div class="form-group text-dark text-left">
+                            <label for="amount1">Amount:</label>
+                            <input type="number" min="1" max="100" value="0" class="form-control" placeholder="Amount" id="amount1">
+                          </div>
+                          <button type="submit" class="btn btn-primary" value="submit">Submit</button>
+                        </form>
+                      </div>
+                    <!-- Modal footer -->
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </td>
             <td><button type="button" class="btn btn-danger">Delete</button></td>
           </tr>
           <tr>
@@ -162,7 +192,37 @@
             <td>Marshmallow</td>
             <td>10</td>
             <td>ก้อน</td>
-            <td>30</td>
+            <td>30
+              <button class="btn btn-success btn-sm" type="button" data-toggle="modal" data-target="#myModal2">
+                <i class="fas fa-edit"></i>
+              </button>
+                  <!-- The Modal -->
+              <div class="modal fade" id="myModal2">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                    <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title text-dark">แก้ไขจำนวนท็อปปิ้ง</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                    <!-- Modal body -->
+                      <div class="modal-body">
+                        <form action="./action_page.php">
+                          <div class="form-group text-dark text-left">
+                            <label for="amount2">Amount:</label>
+                            <input type="number" min="1" max="100" value="0" class="form-control" placeholder="Amount" id="amount2">
+                          </div>
+                          <button type="submit" class="btn btn-primary" value="submit">Submit</button>
+                        </form>
+                      </div>
+                    <!-- Modal footer -->
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </td>
             <td><button type="button" class="btn btn-danger">Delete</button></td>
           </tr>
           <tr>
@@ -170,7 +230,37 @@
             <td>Strawberry</td>
             <td>15</td>
             <td>ลูก</td>
-            <td>10</td>
+            <td>10
+              <button class="btn btn-success btn-sm" type="button" data-toggle="modal" data-target="#myModal3">
+                <i class="fas fa-edit"></i>
+              </button>
+                  <!-- The Modal -->
+              <div class="modal fade" id="myModal3">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                    <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title text-dark">แก้ไขจำนวนท็อปปิ้ง</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                    <!-- Modal body -->
+                      <div class="modal-body">
+                        <form action="./action_page.php">
+                          <div class="form-group text-dark text-left">
+                            <label for="amount3">Amount:</label>
+                            <input type="number" min="1" max="100" value="0" class="form-control" placeholder="Amount" id="amount3">
+                          </div>
+                          <button type="submit" class="btn btn-primary" value="submit">Submit</button>
+                        </form>
+                      </div>
+                    <!-- Modal footer -->
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </td>
             <td><button type="button" class="btn btn-danger">Delete</button></td>
           </tr>
           <tr>
@@ -178,7 +268,37 @@
             <td>Nutella</td>
             <td>20</td>
             <td>ช้อน</td>
-            <td>30</td>
+            <td>30
+              <button class="btn btn-success btn-sm" type="button" data-toggle="modal" data-target="#myModal4">
+                <i class="fas fa-edit"></i>
+              </button>
+                  <!-- The Modal -->
+              <div class="modal fade" id="myModal4">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                    <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title text-dark">แก้ไขจำนวนท็อปปิ้ง</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                    <!-- Modal body -->
+                      <div class="modal-body">
+                        <form action="./action_page.php">
+                          <div class="form-group text-dark text-left">
+                            <label for="amount4">Amount:</label>
+                            <input type="number" min="1" max="100" value="0" class="form-control" placeholder="Amount" id="amount4">
+                          </div>
+                          <button type="submit" class="btn btn-primary" value="submit">Submit</button>
+                        </form>
+                      </div>
+                    <!-- Modal footer -->
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </td>
             <td><button type="button" class="btn btn-danger">Delete</button></td>
           </tr>
           <tr>
@@ -186,7 +306,37 @@
             <td>Ice-cream</td>
             <td>10</td>
             <td>ก้อน</td>
-            <td>20</td>
+            <td>20
+              <button class="btn btn-success btn-sm" type="button" data-toggle="modal" data-target="#myModal5">
+                <i class="fas fa-edit"></i>
+              </button>
+                  <!-- The Modal -->
+              <div class="modal fade" id="myModal5">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                    <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title text-dark">แก้ไขจำนวนท็อปปิ้ง</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                    <!-- Modal body -->
+                      <div class="modal-body">
+                        <form action="./action_page.php">
+                          <div class="form-group text-dark text-left">
+                            <label for="amount5">Amount:</label>
+                            <input type="number" min="1" max="100" value="0" class="form-control" placeholder="Amount" id="amount5">
+                          </div>
+                          <button type="submit" class="btn btn-primary" value="submit">Submit</button>
+                        </form>
+                      </div>
+                    <!-- Modal footer -->
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </td>
             <td><button type="button" class="btn btn-danger">Delete</button></td>
           </tr>
           <tr>
@@ -194,7 +344,37 @@
             <td>Milo Powder</td>
             <td>10</td>
             <td>ช้อน</td>
-            <td>10</td>
+            <td>10
+              <button class="btn btn-success btn-sm" type="button" data-toggle="modal" data-target="#myModal6">
+                <i class="fas fa-edit"></i>
+              </button>
+                  <!-- The Modal -->
+              <div class="modal fade" id="myModal6">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                    <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title text-dark">แก้ไขจำนวนท็อปปิ้ง</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                    <!-- Modal body -->
+                      <div class="modal-body">
+                        <form action="./action_page.php">
+                          <div class="form-group text-dark text-left">
+                            <label for="amount6">Amount:</label>
+                            <input type="number" min="1" max="100" value="0" class="form-control" placeholder="Amount" id="amount6">
+                          </div>
+                          <button type="submit" class="btn btn-primary" value="submit">Submit</button>
+                        </form>
+                      </div>
+                    <!-- Modal footer -->
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </td>
             <td><button type="button" class="btn btn-danger">Delete</button></td>
           </tr>
         </tbody>
