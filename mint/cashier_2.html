@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page Kitchen</title>
+    <title>Page Salse</title>
     
     <!-- Bootstrap CSS-->
     <link
@@ -41,15 +41,15 @@
             <div class="dropdown-menu bg-dark" style="text-align: left; width: 267px; height: 744px; margin-left: -17px;">
               <a class="navbar-brand text-light">
                 <br>
-                <img src="img/kitty.png" alt="logo" style="width:75px; padding-left: 25px;">
-                Staff Name: PP
+                <img src="img/chameleon.png" alt="logo" style="width:75px; padding-left: 25px;">
+                Staff Name: Pop
               <br><br>
               </a>
               
               <a class="dropdown-item" style="color: black;" href="ingredient.html"><img src="img/harvest.png" alt="logo" style="width: 45px; margin-left: 10px;">-->ข้อมูลวัตถุดิบ</a><hr width=200px size=5 color=white>
-              <a class="dropdown-item" style="color: black;" href="Allmenu.html"><img src="img/cupcake.png" alt="logo" style="width: 45px; margin-left: 10px;">-->ข้อมูลของหวาน</a><hr width=200px size=5 color=white>
-              <a class="dropdown-item" style="color: black;" href="sales_table.html"><img src="img/cheque.png" alt="logo" style="width: 45px; margin-left: 10px;">-->ข้อมูลการขาย</a><hr width=200px size=5 color=white>
-              <a class="dropdown-item" style="color: black;" href="kitchen.html"><img src="img/cooking.png" alt="logo" style="width: 45px; margin-left: 10px;">-->ข้อมูลฝ่ายห้องครัว</a><hr width=200px size=5 color=white>
+              <a class="dropdown-item" style="color: black;" href="index.html"><img src="img/cupcake.png" alt="logo" style="width: 45px; margin-left: 10px;">-->ข้อมูลของหวาน</a><hr width=200px size=5 color=white>
+              <a class="dropdown-item" style="color: black;" href="cashier.html"><img src="img/cheque.png" alt="logo" style="width: 45px; margin-left: 10px;">-->ข้อมูลการขาย</a><hr width=200px size=5 color=white>
+              <a class="dropdown-item" style="color: black;" href="cook.html"><img src="img/cooking.png" alt="logo" style="width: 45px; margin-left: 10px;">-->ข้อมูลฝ่ายห้องครัว</a><hr width=200px size=5 color=white>
               <a class="dropdown-item" style="color: black;" href="#"><img src="img/delivery-man.png" alt="logo" style="width: 45px; margin-left: 10px;">-->ข้อมูลการจัดส่ง</a><hr width=200px size=5 color=white>
               
               <br>
@@ -70,7 +70,8 @@
     </nav>
 
     <div class="container p-3 my-3" >
-      <h1 class="text-black text-center">ตารางจัดการข้อมูลฝ่ายครัว</h1>
+      <h1 class="text-black text-center">ตารางจัดการข้อมูลการขาย</h1>
+      <hr  width="45%" style="border: 2px solid rgb(250, 247, 247);">
     </div>
   </br>
 
@@ -87,205 +88,153 @@
             <th>Amount</th>
             <th>Status</th>
             <th>Choose an order list</th>
+            <th>Cancel order</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>001</td>
-            <td>12-02-64 09:20:01</td>
-            <td>Waffle,Blueberry +5,ค่าจัดส่ง 5บาท</td>
-            <td>1</td>
-            <td>Delivery</td>
-            <td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">
-              Choose
-            </button>
-            <!-- The Modal -->
-            <div class="modal" id="myModal">
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content bg-dark">
-                  <!-- Modal Header -->
-                  <div class="modal-header">
-                    <h4 class="modal-title text-light">----------------- คำสั่งซื้อ -----------------</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  </div>
-                  <!-- Modal body -->
-                  <div class="modal-body">
-                    <table class="table table-dark table-borderless">
-                      <thead class="thead-dark">
-                        <tr>
-                          <th>รหัส</th>
-                          <th>รายการคำสั่งซื้อ</th>
-                          <th>ราคา (Baht)</th>
-                          <th>สถานะ</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>001</td>
-                          <td>Waffle</td>
-                          <td>125</td>
-                          <td>Delivery</td>
-                        </tr>
-                        <tr>
-                          <td></td>
-                          <td>Blueberry</td>
-                          <td>5</td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td></td>
-                          <td>ค่าจัดส่ง</td>
-                          <td>5</td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td>จำนวน</td>
-                          <td>1 รายการ</td>
-                          <td>ราคารวม</td>
-                          <td>135 /Baht</td>
-                        </tr>
+            <tr>
+                <td>001</td>
+                <td>12-02-64 10:40:07</td>
+                <td>Waffle,บราวนี่ +10</td>
+                <td>1</td>
+                <td>Delivery</td>
+                <td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal1">
+                  Choose
+                </button>
+                <!-- The Modal -->
+                <div class="modal" id="myModal1">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content bg-dark">
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title text-light">----------------- คำสั่งซื้อ -----------------</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      <!-- Modal body -->
+                      <div class="modal-body">
+                        <table class="table table-dark table-borderless">
+                          <thead class="thead-dark">
+                            <tr>
+                              <th>รหัส</th>
+                              <th>รายการคำสั่งซื้อ</th>
+                              <th>ราคา (Baht)</th>
+                              <th>สถานะ</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>001</td>
+                              <td>Waffle</td>
+                              <td>120</td>
+                              <td>Delivery</td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td>บราวนี่</td>
+                              <td>10</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>ค่าจัดส่ง</td>
+                                <td>15</td>
+                                <td></td>
+                              </tr>
+                            <tr>
+                              <td>จำนวน</td>
+                              <td>1 รายการ</td>
+                              <td>ราคารวม</td>
+                              <td>145 /Baht</td>
+                            </tr>
+                         
+                          </tbody>
+                        </table>
+                        <button type="submit" class="btn btn-success" value="Submit">Submit</button>
+                      </div>
+                       <!-- Modal footer -->
+                      <div class="modal-footer">
                         
-                      </tbody>
-                    </table>
-                    <button type="submit" class="btn btn-success" value="Submit">Completed</button>
-                  </div>
-                   <!-- Modal footer -->
-                  <div class="modal-footer">
-                    
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </td>
-          </tr>
-          <tr>
-            <td>002</td>
-            <td>12-02-64 09:24:05</td>
-            <td>Cake, Ice-cream +10</td>
-            <td>2</td>
-            <td>Take Home</td>
-            <td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal1">
-              Choose
-            </button>
-            <!-- The Modal -->
-            <div class="modal" id="myModal1">
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content bg-dark">
-                  <!-- Modal Header -->
-                  <div class="modal-header">
-                    <h4 class="modal-title text-light">----------------- คำสั่งซื้อ -----------------</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  </div>
-                  <!-- Modal body -->
-                  <div class="modal-body">
-                    <table class="table table-dark table-borderless">
-                      <thead class="thead-dark">
-                        <tr>
-                          <th>รหัส</th>
-                          <th>รายการคำสั่งซื้อ</th>
-                          <th>ราคา (Baht)</th>
-                          <th>สถานะ</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>002</td>
-                          <td>Cake</td>
-                          <td>45</td>
-                          <td>Take Home</td>
-                        </tr>
-                        <tr>
-                          <td></td>
-                          <td>Ice-cream</td>
-                          <td>10</td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td>จำนวน</td>
-                          <td>2 รายการ</td>
-                          <td>ราคารวม</td>
-                          <td>100 /Baht</td>
-                        </tr>
-                     
-                      </tbody>
-                    </table>
-                    <button type="submit" class="btn btn-success" value="Submit">Completed</button>
-                  </div>
-                   <!-- Modal footer -->
-                  <div class="modal-footer">
-                    
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </td>
+              <td><button type="button" class="btn btn-danger">Cancle</button></td>
+              </tr>
+            <tr>
+                <td>002</td>
+                <td>12-02-64 10:40:07</td>
+                <td>Bingsu,สตรอเบอร์รี่ +15</td>
+                <td>2</td>
+                <td>Seat</td>
+                <td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal2">
+                  Choose
+                </button>
+                <!-- The Modal -->
+                <div class="modal" id="myModal2">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content bg-dark">
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title text-light">----------------- คำสั่งซื้อ -----------------</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      <!-- Modal body -->
+                      <div class="modal-body">
+                        <table class="table table-dark table-borderless">
+                          <thead class="thead-dark">
+                            <tr>
+                              <th>รหัส</th>
+                              <th>รายการคำสั่งซื้อ</th>
+                              <th>ราคา (Baht)</th>
+                              <th>สถานะ</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>002</td>
+                              <td>Bingsu</td>
+                              <td>125</td>
+                              <td>Take Home</td>
+                            </tr>
+                            <tr>
+                              <td></td>
+                              <td>สตรอเบอร์รี่</td>
+                              <td>15</td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td>จำนวน</td>
+                              <td>2 รายการ</td>
+                              <td>ราคารวม</td>
+                              <td>280 /Baht</td>
+                            </tr>
+                         
+                          </tbody>
+                        </table>
+                        <button type="submit" class="btn btn-success" value="Submit">Submit</button>
+                      </div>
+                       <!-- Modal footer -->
+                      <div class="modal-footer">
+                        
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </td>
-          </tr>
+              </td>
+              <td><button type="button" class="btn btn-danger">Cancle</button></td>
+              </tr>
+    
+              
+
           <tr>
             <td>003</td>
-            <td>12-02-64 09:25:30</td>
-            <td>Macaroons</td>
-            <td>5</td>
-            <td>Seat</td>
-            <td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal2">
-              Choose
-            </button>
-            <!-- The Modal -->
-            <div class="modal" id="myModal2">
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content bg-dark">
-                  <!-- Modal Header -->
-                  <div class="modal-header">
-                    <h4 class="modal-title text-light">----------------- คำสั่งซื้อ -----------------</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  </div>
-                  <!-- Modal body -->
-                  <div class="modal-body">
-                    <table class="table table-dark table-borderless">
-                      <thead class="thead-dark">
-                        <tr>
-                          <th>รหัส</th>
-                          <th>รายการคำสั่งซื้อ</th>
-                          <th>ราคา (Baht)</th>
-                          <th>สถานะ</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>003</td>
-                          <td>Macaroons</td>
-                          <td>25</td>
-                          <td>Seat</td>
-                        </tr>
-                        
-                        <tr>
-                          <td>จำนวน</td>
-                          <td>5 รายการ</td>
-                          <td>ราคารวม</td>
-                          <td>125 /Baht</td>
-                        </tr>
-                     
-                      </tbody>
-                    </table>
-                    <button type="submit" class="btn btn-success" value="Submit">Completed</button>
-                  </div>
-                   <!-- Modal footer -->
-                  <div class="modal-footer">
-                    
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </td>
-          </tr>
-          <tr>
-            <td>004</td>
-            <td>12-02-64 10:30:28</td>
-            <td>Bingsu,Brownies +10,ค่าจัดส่ง 10บาท</td>
+            <td>12-02-64 09:20:01</td>
+            <td>Ice-cream Green tea,นูเทลล่า +20</td>
             <td>1</td>
-            <td>Delivery</td>
+            <td>Take Home</td>
             <td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal3">
               Choose
             </button>
@@ -311,49 +260,45 @@
                       </thead>
                       <tbody>
                         <tr>
-                          <td>004</td>
-                          <td>Bingsu</td>
-                          <td>125</td>
-                          <td>Delivery</td>
+                          <td>003</td>
+                          <td>Ice-cream Green tea</td>
+                          <td>45</td>
+                          <td>Take Home</td>
                         </tr>
                         <tr>
                           <td></td>
-                          <td>Brownies</td>
-                          <td>10</td>
+                          <td>นูเทลล่า</td>
+                          <td>20</td>
                           <td></td>
                         </tr>
-                        <tr>
-                          <td></td>
-                          <td>ค่าจัดส่ง</td>
-                          <td>10</td>
-                          <td></td>
-                        </tr>
+                        
                         <tr>
                           <td>จำนวน</td>
                           <td>1 รายการ</td>
                           <td>ราคารวม</td>
-                          <td>145 /Baht</td>
+                          <td>65 /Baht</td>
                         </tr>
-                     
+                        
                       </tbody>
                     </table>
-                    <button type="submit" class="btn btn-success" value="Submit">Completed</button>
+                    <button type="submit" class="btn btn-success" value="Submit">Submit</button>
                   </div>
                    <!-- Modal footer -->
                   <div class="modal-footer">
-                   
+                    
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                   </div>
                 </div>
               </div>
             </div>
           </td>
+          <td><button type="button" class="btn btn-danger">Cancle</button></td>
           </tr>
           <tr>
-            <td>005</td>
-            <td>12-02-64 10:40:07</td>
-            <td>Pancake,Blueberry +5</td>
-            <td>3</td>
+            <td>004</td>
+            <td>12-02-64 09:24:05</td>
+            <td>Cake Ice-cream</td>
+            <td>1</td>
             <td>Take Home</td>
             <td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal4">
               Choose
@@ -380,27 +325,21 @@
                       </thead>
                       <tbody>
                         <tr>
-                          <td>005</td>
-                          <td>Pancake</td>
-                          <td>45</td>
+                          <td>004</td>
+                          <td>Cake Ice-cream</td>
+                          <td>200</td>
                           <td>Take Home</td>
                         </tr>
                         <tr>
-                          <td></td>
-                          <td>Blueberry</td>
-                          <td>5</td>
-                          <td></td>
-                        </tr>
-                        <tr>
                           <td>จำนวน</td>
-                          <td>3 รายการ</td>
+                          <td>1 รายการ</td>
                           <td>ราคารวม</td>
-                          <td>140 /Baht</td>
+                          <td>200 /Baht</td>
                         </tr>
                      
                       </tbody>
                     </table>
-                    <button type="submit" class="btn btn-success" value="Submit">Completed</button>
+                    <button type="submit" class="btn btn-success" value="Submit">Submit</button>
                   </div>
                    <!-- Modal footer -->
                   <div class="modal-footer">
@@ -411,7 +350,138 @@
               </div>
             </div>
           </td>
+          <td><button type="button" class="btn btn-danger">Cancle</button></td>
           </tr>
+          <tr>
+            <td>005</td>
+            <td>12-02-64 09:25:30</td>
+            <td>Pancake</td>
+            <td>1</td>
+            <td>Seat</td>
+            <td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal5">
+              Choose
+            </button>
+            <!-- The Modal -->
+            <div class="modal" id="myModal5">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-dark">
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title text-light">----------------- คำสั่งซื้อ -----------------</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <table class="table table-dark table-borderless">
+                      <thead class="thead-dark">
+                        <tr>
+                          <th>รหัส</th>
+                          <th>รายการคำสั่งซื้อ</th>
+                          <th>ราคา (Baht)</th>
+                          <th>สถานะ</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>005</td>
+                          <td>Pancake</td>
+                          <td>99</td>
+                          <td>Seat</td>
+                        </tr>
+                        
+                        <tr>
+                          <td>จำนวน</td>
+                          <td>1 รายการ</td>
+                          <td>ราคารวม</td>
+                          <td>99 /Baht</td>
+                        </tr>
+                     
+                      </tbody>
+                    </table>
+                    <button type="submit" class="btn btn-success" value="Submit">Submit</button>
+                  </div>
+                   <!-- Modal footer -->
+                  <div class="modal-footer">
+                    
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td><button type="button" class="btn btn-danger">Cancle</button></td>
+          </tr>
+          <tr>
+            <td>006</td>
+            <td>12-02-64 10:30:28</td>
+            <td>Pie,สตรอเบอร์รี่ +15,ค่าจัดส่ง 10บาท</td>
+            <td>1</td>
+            <td>Delivery</td>
+            <td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal6">
+              Choose
+            </button>
+            <!-- The Modal -->
+            <div class="modal" id="myModal6">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-dark">
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title text-light">----------------- คำสั่งซื้อ -----------------</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <table class="table table-dark table-borderless">
+                      <thead class="thead-dark">
+                        <tr>
+                          <th>รหัส</th>
+                          <th>รายการคำสั่งซื้อ</th>
+                          <th>ราคา (Baht)</th>
+                          <th>สถานะ</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>006</td>
+                          <td>Pie</td>
+                          <td>125</td>
+                          <td>Delivery</td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td>สตรอเบอร์รี่</td>
+                          <td>15</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td>ค่าจัดส่ง</td>
+                          <td>10</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>จำนวน</td>
+                          <td>1 รายการ</td>
+                          <td>ราคารวม</td>
+                          <td>145 /Baht</td>
+                        </tr>
+                     
+                      </tbody>
+                    </table>
+                    <button type="submit" class="btn btn-success" value="Submit">Submit</button>
+                  </div>
+                   <!-- Modal footer -->
+                  <div class="modal-footer">
+                   
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td><button type="button" class="btn btn-danger">Cancle</button></td>
+          </tr>
+        
         </tbody>
       </table>
     </div>

@@ -41,16 +41,16 @@
             <div class="dropdown-menu bg-dark" style="text-align: left; width: 267px; height: 744px; margin-left: -17px; ">
               <a class="navbar-brand text-light">
                 <br>
-                <img src="img/rab.png" alt="logo" style="width:75px; padding-left: 25px;">
+                <img src="https://i.pinimg.com/originals/01/a2/f6/01a2f6fb22f674549fc40a6efa3e9c98.png" alt="logo" style="width:75px; padding-left: 25px;">
                 Staff Name: Mint
               <br><br>
               </a>
               
-              <a class="dropdown-item" style="color: black;" href="ingredient.html"><img src="img/harvest.png" alt="logo" style="width: 45px; margin-left: 10px;">-->ข้อมูลวัตถุดิบ</a><hr width=200px size=5 color=white>
-              <a class="dropdown-item" style="color: black;" href="Allmenu.html"><img src="img/cupcake.png" alt="logo" style="width: 45px; margin-left: 10px;">-->ข้อมูลของหวาน</a><hr width=200px size=5 color=white>
-              <a class="dropdown-item" style="color: black;" href="sales_table.html"><img src="img/cheque.png" alt="logo" style="width: 45px; margin-left: 10px;">-->ข้อมูลการขาย</a><hr width=200px size=5 color=white>
-              <a class="dropdown-item" style="color: black;" href="kitchen.html"><img src="img/cooking.png" alt="logo" style="width: 45px; margin-left: 10px;">-->ข้อมูลฝ่ายห้องครัว</a><hr width=200px size=5 color=white>
-              <a class="dropdown-item" style="color: black;" href="#"><img src="img/delivery-man.png" alt="logo" style="width: 45px; margin-left: 10px;">-->ข้อมูลการจัดส่ง</a><hr width=200px size=5 color=white>
+              <a class="dropdown-item" style="color: black;" href="ingredient.html"><img src="https://i.pinimg.com/originals/3d/ec/73/3dec73eefb1eb4fdae1a7a0e49b5c936.png" alt="logo" style="width: 45px; margin-left: 10px;">-->ข้อมูลวัตถุดิบ</a><hr width=200px size=5 color=white>
+              <a class="dropdown-item" style="color: black;" href="index.html"><img src="https://i.pinimg.com/originals/19/b3/b3/19b3b369892b34d4c4367bd6494529a4.png" alt="logo" style="width: 45px; margin-left: 10px;">-->ข้อมูลของหวาน</a><hr width=200px size=5 color=white>
+              <a class="dropdown-item" style="color: black;" href="cashier.html"><img src="https://i.pinimg.com/originals/93/c6/be/93c6be305c1d7d3a0dd02993ff031f69.png" alt="logo" style="width: 45px; margin-left: 10px;">-->ข้อมูลการขาย</a><hr width=200px size=5 color=white>
+              <a class="dropdown-item" style="color: black;" href="cook.html"><img src="https://i.pinimg.com/originals/98/82/ec/9882ec514a7646b304d06f8f42a15a0c.png" alt="logo" style="width: 45px; margin-left: 10px;">-->ข้อมูลฝ่ายห้องครัว</a><hr width=200px size=5 color=white>
+              <a class="dropdown-item" style="color: black;" href="#"><img src="https://i.pinimg.com/originals/5c/44/92/5c44929ceecbafc93b5bf1320aeb574f.png" alt="logo" style="width: 45px; margin-left: 10px;">-->ข้อมูลการจัดส่ง</a><hr width=200px size=5 color=white>
               
               <br>
               <div class="container-sm">
@@ -72,13 +72,14 @@
       </ul>
       <!-- Brand/logo -->
         <a class="navbar-brand ">MamaPenguin</a>
-          <img src="img/logopen.png" alt="logo" style="width:40px;">
+          <img src="https://i.pinimg.com/originals/13/b9/9a/13b99aab8bc10571cb6d0fc155f05a12.png" alt="logo" style="width:40px;">
         </a>
          
     </nav>
 
     <div class="container p-3 my-3" >
       <h1 class="text-black text-center">ตารางจัดการข้อมูลเมนูของหวาน</h1>
+      <hr  width="45%" style="border: 2px solid rgb(250, 247, 247);">
     </div>
 
     <!--ส่วนของ การกด +add แล้วจะขึ้น Modal ขึ้นมาให้กรอกข้อมูลเพิ่มรายการวัตถุดิบ-->
@@ -123,7 +124,7 @@
                 </div>
                 
               
-              <button type="submit" class="btn btn-primary" value="submit">Submit</button>
+              <button type="submit" onclick="alert_menu()" class="btn btn-primary" value="submit">Submit</button>
             </div>
           <!-- Modal footer -->
             
@@ -145,6 +146,8 @@
         <thead >
           <tr>
             <th>ID</th>
+            <th>Recipe ingredient</th>
+            <th>Recipe topping</th>
             <th>Menu</th>
             <th>Price (Baht)</th>
             <th>Delete</th>
@@ -153,37 +156,87 @@
         <tbody>
           <tr>
             <td>001</td>
-            <td>Bingsu</td>
+            <td>น้ำตาลทราย 1 ช้อนโต๊ะ,ผงชาเขียว 10 ช้อน</td>
+            <td>มาร์ชเมลโล่ 5 ก้อน,ผงชาเขียว 3ช้อน,ผงไมโล 3ช้อน</td>
+            <td>Kakigori</td>
             <td>125</td>
             <td><button type="button" class="btn btn-danger">Delete</button></td>
           </tr>
           <tr>
             <td>002</td>
-            <td>Ice-cream</td>
-            <td>45</td>
+            <td>น้ำตาลทราย 1 ช้อนโต๊ะ,ไข่ไก่ 25 ฟอง</td>
+            <td>สตรอเบอร์รี่ 5 ก้อน,บราวนี่ 5ก้อน,ผงไมโล 3ช้อน</td>
+            <td>Waffle</td>
+            <td>120</td>
             <td><button type="button" class="btn btn-danger">Delete</button></td>
           </tr>
           <tr>
             <td>003</td>
+            <td>น้ำตาลทรายแดง 100 กรัม, นมข้นจืด 80 มิลลิลิตร</td>
+            <td>ไอศกรีม 1 ลูก, นูเทลล่า 2 ช้อน, บราวนี่ 5 ก้อน</td>
             <td>Granita</td>
-            <td>125</td>
+            <td>50</td>
             <td><button type="button" class="btn btn-danger">Delete</button></td>
           </tr>
+          
           <tr>
             <td>004</td>
-            <td>Kakigori</td>
-            <td>20</td>
+            <td>นมข้นหวาน 75 มิลลิลิตร, ผงโกโก้ 5 ช้อนโต๊ะ</td>
+            <td>มาร์ชเมลโล่ 5 ก้อน,บราวนี่ 5 ก้อน,สตรอเบอร์รี่ 5 ลูก</td>
+            <td>Cake Ice-cream</td>
+            <td>200</td>
             <td><button type="button" class="btn btn-danger">Delete</button></td>
           </tr>
           <tr>
             <td>005</td>
-            <td>Cake Ice-cream</td>
-            <td>250</td>
+            <td>นมข้นหวาน 30 มิลลิลิตร, ผงโกโก้ 5 ช้อนโต๊ะ</td>
+            <td>มาร์ชเมลโล่ 5 ก้อน, นูเทลล่า 2 ช้อน, บราวนี่ 5 ก้อน</td>
+            <td>Ice-cream Green tea</td>
+            <td>45</td>
             <td><button type="button" class="btn btn-danger">Delete</button></td>
           </tr>
+          <tr>
+            <td>006</td>
+            <td>นมข้นหวาน 80 มิลลิลิตร,ไข่ไก่ 20 ฟอง</td>
+            <td>สตรอเบอร์รี่ 5 ก้อน,บราวนี่ 5ก้อน,ผงไมโล 3ช้อน</td>
+            <td>Pancake</td>
+            <td>99</td>
+            <td><button type="button" class="btn btn-danger">Delete</button></td>
+          </tr>
+          <tr>
+            <td>007</td>
+            <td>นมสด 100 มิลลิลิตร,ไข่ไก่ 20 ฟอง</td>
+            <td>สตรอเบอร์รี่ 5 ก้อน,บราวนี่ 5ก้อน,นูเทลล่า 3ช้อน</td>
+            <td>Pudding</td>
+            <td>65</td>
+            <td><button type="button" class="btn btn-danger">Delete</button></td>
+          </tr>
+          <tr>
+            <td>008</td>
+            <td>นมข้นหวาน 180 มิลลิลิตร,ไข่ไก่ 20 ฟอง</td>
+            <td>สตรอเบอร์รี่ 5 ก้อน,มาร์ชเมลโล่ 5ก้อน,ไอศกรีม 2ก้อน</td>
+            <td>Pie</td>
+            <td>125</td>
+            <td><button type="button" class="btn btn-danger">Delete</button></td>
+          </tr>
+
+         
+          <tr>
+            <td>009</td>
+            <td>นมสด 200 กรัม, นมข้นหวาน 380 มิลลิลิตร</td>
+            <td>สตรอเบอร์รี่ 5 ลูก, นูเทลล่า 2 ช้อน, บราวนี่ 5 ก้อน</td>
+            <td>Bingsu</td>
+            <td>125</td>
+            <td><button type="button" class="btn btn-danger">Delete</button></td>
+          </tr>
+         
+         
+          
+         
+         
         </tbody>
       </table>
     </div>
-    <script src="ingre.js"></script>
+    <script src="alert.js"></script>
   </body>
 </html>
