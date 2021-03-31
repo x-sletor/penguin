@@ -48,11 +48,11 @@ html(lang='en')
               .container-sm
                 button.btn.btn-danger.btn-block(type='button') Logout
         li.nav-item
-          a.nav-link(href='ingredient.html') ตารางจัดการข้อมูลวัตถุดิบ
+          a.nav-link(href='/ingredient') ตารางจัดการข้อมูลวัตถุดิบ
         li.nav-item
-          a.nav-link(href='topping.html') ตารางจัดการข้อมูลท็อปปิ้ง
+          a.nav-link(href='/topping') ตารางจัดการข้อมูลท็อปปิ้ง
         li.nav-item
-          a.nav-link(href='menu.html') ตารางจัดการข้อมูลเมนูของหวาน
+          a.nav-link(href='/menu') ตารางจัดการข้อมูลเมนูของหวาน
       // Brand/logo
       a.navbar-brand MamaPenguin
       img(src='https://i.pinimg.com/originals/13/b9/9a/13b99aab8bc10571cb6d0fc155f05a12.png' alt='logo' style='width:40px;')
@@ -347,6 +347,34 @@ html(lang='en')
                         .form-group.text-dark.text-left
                           label(for='amount10') Amount:
                           input#amount10.form-control(type='number' min='1' max='100' value='0' placeholder='Amount')
+                        button.btn.btn-primary(type='submit' value='submit') Submit
+                    // Modal footer
+                    .modal-footer
+                      button.btn.btn-danger(type='button' data-dismiss='modal') Close
+            td
+              button.btn.btn-danger(type='button') Delete
+          tr
+            td 0010
+            td นมสด
+            td มิลลิกรัม
+            td
+              | 200
+              button.btn.btn-success.btn-sm(type='button' data-toggle='modal' data-target='#myModal4')
+                i.fas.fa-edit
+              // The Modal
+              #myModal4.modal.fade
+                .modal-dialog.modal-dialog-centered
+                  .modal-content
+                    // Modal Header
+                    .modal-header
+                      h4.modal-title.text-dark แก้ไขจำนวนวัตถุดิบ
+                      button.close(type='button' data-dismiss='modal') ×
+                    // Modal body
+                    .modal-body
+                      form(action='./action_page.php')
+                        .form-group.text-dark.text-left
+                          label(for='amount4') Amount:
+                          input#amount4.form-control(type='number' min='1' max='100' value='0' placeholder='Amount')
                         button.btn.btn-primary(type='submit' value='submit') Submit
                     // Modal footer
                     .modal-footer
